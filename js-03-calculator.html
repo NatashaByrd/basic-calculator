@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    
+    <style>
+        
+        #calculator {
+            background-color: rgb(0, 25, 25);        
+            width: 280px;
+            min-height: 400px;
+            padding: 15px;
+            margin: 30px auto;
+            text-align: center; 
+            border : 5px solid #678;
+            border-radius: 20px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            color: #678;
+            box-shadow: 15px 15px 15px #345;
+        }
+        
+        #numInput {
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 5px 15px;
+            width: 50%;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+        
+        button {
+             background-color: aliceblue;
+            color: black;
+            border-radius: 10px;
+            margin: 13px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            box-shadow: 2px 2px 10px #FFF;
+        }
+        #modButton {
+        font-size: .7rem;
+        
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    
+    <div id="calculator">
+        
+        <h2>Calculator</h2>
+        
+        <input type="number" id="numInput">
+        
+        <h2 id="calcOutput"></h2>
+        
+        
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">&#247;</button>
+        <button onclick="calculate('E')">E</button>
+        <button onclick="calculate('%')" id="modButton">Mod</button>
+        <!--<button onclick="calculate('sq')">&#8730;</button> -->
+        <br/><br/><br/>
+        <button onclick="calculate('=')">=</button>
+        <button onclick="calculate('clear')">C</button>
+        
+     </div>
+    
+    <script src="js/script-calculator.js"></script>
+	
+</body>
+    
+</html>
